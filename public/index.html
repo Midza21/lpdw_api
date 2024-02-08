@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Formulaire</title>
+        </head>
+<!----------------------------------------------------- FORMULAIRE D'AJOUT DE USER ----------------------------------------------->
+
+        <body>
+
+            <!----------------------------------------------------- AJOUTER ------------------------------------------------------>
+
+            <h1>Ajouter</h1>
+            <form action="new_device" method="post">
+                <div>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+
+                <div>
+                    <label for="localisation">Localisation :</label>
+                    <input type="text" id="localisation" name="localisation" required>
+                </div>
+
+                <div>
+                    <button type="submit">Envoyer</button>
+                </div>
+            </form>
+
+            <!----------------------------------------------------- MODIFICATION ------------------------------------------------->
+
+            <h1>Modifier</h1>
+            <form>
+                <div>
+                    <label for="id">Id :</label>
+                    <input type="int" id="id" name="id" required>
+                </div>
+
+                <div>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+
+                <div>
+                    <label for="localisation">Localisation :</label>
+                    <input type="text" id="localisation" name="localisation" required>
+                </div>
+
+                <div>
+                    <button type="submit" onclick="update()">Envoyer</button>
+                </div>
+            </form>
+
+
+            <script src="library.js"></script> 
+            <script src="app.js"></script> 
+
+            <!----------------------------------------------------- SUPPRESSION -------------------------------------------------->
+
+            <h1>Supprimer</h1>
+            <form>
+                <div>
+                    <label for="id">Id :</label>
+                    <input type="int" id="id" name="id" required>
+                </div>
+
+                <div>
+                    <button type="submit" onclick="Delete()">Envoyer</button>
+                </div>
+            </form>
+
+<!-------------------------------------------------------------------------------------------------------------------------------->
+
+        </body>
+    </html>
